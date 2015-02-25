@@ -1,17 +1,15 @@
-var $theCircle = $('.circle');
+var $listField = $('.list-field');
 var $form = $('form');
-var $input = $('#the-color');
+var $input = $('#the-list');
 
 $form.on('submit', function(eventObject) {
 	// Stop the form from doing what it normally does
 	eventObject.preventDefault();
 
-	$theCircle.css('background-color', $input.val());
+	var $theLI = $('<li>');
+	$theLI.html($input.val());
 
-	var $theH1 = $('<h1>');
-	$theH1.html($input.val());
-
-	$theCircle.prepend($theH1);
+	$listField.prepend($theLI);
 
 	$input.val('');
 })

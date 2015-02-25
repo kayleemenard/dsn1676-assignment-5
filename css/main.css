@@ -17,14 +17,6 @@ html {
 	box-sizing: inherit;
 }
 
-.circle {
-	width: 200px;
-	height: 200px;
-	background-color: orange;
-	border-radius: 50%;
-	position: absolute;
-}
-
-.circle-border {
-	border: 4px solid hotpink;
+.list-item {
+	list-style: none;
 }
