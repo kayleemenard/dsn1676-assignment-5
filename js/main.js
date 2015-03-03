@@ -1,7 +1,6 @@
-var $ol = $('.list-field');
+var $ul = $('.list-field');
 var $form = $('form');
 var $input = $('#the-list');
-var $remove = $('<li><button></button></li>');
  
 $form.on('submit', function(eventObject) {
 	eventObject.preventDefault(); //change
@@ -9,12 +8,15 @@ $form.on('submit', function(eventObject) {
 	var $li = $('<li>');
 	$li.html($input.val());
 
-	$ol.prepend($li); //makes text appear in order
+	var $remove = $('<button>');
+
+	$ul.prepend($li); //makes text appear in order
+	$ul.prepend($remove);
 
 	$input.val(''); //removes default text from input field
 
 }) 
 
-$ol.on('click', 'li', function() {
+$ul.on('click', 'li', function() {
 	$(this).addClass('list-highlight');
 });
