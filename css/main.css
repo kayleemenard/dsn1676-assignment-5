@@ -20,3 +20,7 @@ html {
 .list-item {
 	list-style: none;
 }
+
+.list-highlight {
+	text-decoration: line-through;
+}

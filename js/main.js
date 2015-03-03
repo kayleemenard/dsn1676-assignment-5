@@ -1,14 +1,14 @@
-var $listField = $('.list-field');
+var $ol = $('.list-field');
 var $form = $('form');
 var $input = $('#the-list');
 
 $form.on('submit', function(eventObject) {
-	eventObject.preventDefault();
+	eventObject.preventDefault(); //change
 
-	var $theLI = $('<li>');
-	$theLI.html($input.val());
+	var $li = $('<li>');
+	$li.html($input.val());
 
-	$listField.prepend($theLI);
+	$ol.prepend($li); //makes text appear in order
 
-	$input.val('');
+	$input.val(''); //removes default text from input field
 })
