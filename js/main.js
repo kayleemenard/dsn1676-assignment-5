@@ -8,12 +8,16 @@ $form.on('submit', function(eventObject) {
 	var $li = $('<li>');
 	$li.html($input.val());
 
-	var $remove = $('<button>');
+	$input.val(''); //removes default text from input field
 
 	$ul.prepend($li); //makes text appear in order
-	$ul.prepend($remove);
 
-	$input.val(''); //removes default text from input field
+	var $remove = $('<button>');
+	$remove.html('complete');
+	$remove.addClass('btn')
+
+	$li.prepend($remove);
+
 
 }) 
 
