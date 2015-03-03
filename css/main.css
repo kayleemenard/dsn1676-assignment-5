@@ -23,4 +23,5 @@ html {
 
 .list-highlight {
 	text-decoration: line-through;
+	color: grey;
 }

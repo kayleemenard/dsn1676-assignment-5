@@ -12,3 +12,7 @@ $form.on('submit', function(eventObject) {
 
 	$input.val(''); //removes default text from input field
 })
+
+$ol.on('click', 'li', function() {
+	$(this).addClass('list-highlight');
+});
