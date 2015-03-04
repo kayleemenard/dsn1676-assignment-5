@@ -13,6 +13,9 @@ $form.on('submit', function(eventObject) {
 
 	$remove.html('X'); //
 	$remove.addClass('btn')
+	$remove.on('click', function() {
+		$li.remove();
+	})
 
 	$ul.prepend($li); //makes text appear in order
 	$li.prepend($remove);
