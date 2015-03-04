@@ -17,9 +17,8 @@ html {
 	box-sizing: inherit;
 }
 
-.list-item {
+.list {
 	margin-bottom: 1em;
-	list-style: none;
 }
 
 .list-highlight {
@@ -28,11 +27,12 @@ html {
 }
 
 .btn {
-	margin-right: 1em;
+	float: right;
+}
+
+.btn,
+.btn-add {
 	background-color: white;
 	border: 2px solid grey;
 	color: black;
-
-	display: block;
-	float: right;
 }

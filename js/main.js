@@ -5,18 +5,23 @@ var $input = $('#the-list');
 $form.on('submit', function(eventObject) {
 	eventObject.preventDefault(); //change
 
-	var $li = $('<li>');
-	$li.html($input.val());
+	var $li = $('<li>'); // creating variable from <li> in html
+	var $remove = $('<button>');
+
+	$li.html($input.val()); //the li var is composed of the results of the input var
+	$li.addClass('list');
+
+	$remove.html('X'); //
+	$remove.addClass('btn')
+
+	$ul.prepend($li); //makes text appear in order
+	$li.prepend($remove);
 
 	$input.val(''); //removes default text from input field
 
-	$ul.prepend($li); //makes text appear in order
 
-	var $remove = $('<button>');
-	$remove.html('complete');
-	$remove.addClass('btn')
 
-	$li.prepend($remove);
+
 
 
 }) 
