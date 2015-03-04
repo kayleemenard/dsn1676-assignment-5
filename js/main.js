@@ -21,12 +21,6 @@ $form.on('submit', function(eventObject) {
 	$li.prepend($remove);
 
 	$input.val(''); //removes default text from input field
-
-
-
-
-
-
 }) 
 
 $ul.on('click', 'li', function() {
