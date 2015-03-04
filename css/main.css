@@ -17,14 +17,14 @@ html {
 	box-sizing: inherit;
 }
 body {
+	background-color: ivory;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
-
-	font-family: 'Open Sans', sans-serif;
 }
 
 .form {
-	background-color: lightgrey;
+	background-color: khaki;
 	font-weight: 800;
 	text-transform: uppercase;
 	overflow: hidden;
@@ -33,30 +33,45 @@ body {
 	text-align: center;
 }
 
-.list {
-	margin-bottom: 1em;
+label {
+	color: lightcoral;
+}
 
+.list {
+	font-size: .75em;
+	margin-bottom: 1em;
 }
 
 .list-field {
 	width: 50vw;
-	margin-left: 0 50% 0 auto;
+	margin-left: 0 50% 0 50%;
 }
 
 .list-highlight {
-	color: grey;
+	color: slategrey;
 	text-decoration: line-through;
 }
 
 .btn {
 	float: right;
-	font-style: bold;
+	font-weight: 800;
 }
 
 .btn,
 .btn-add {
 	background-color: white;
-	border: 2px solid grey;
+	border: 3px solid lightcoral;
+	border-radius: 15%;
 	color: black;
 	text-transform: uppercase;
+}
+
+.btn:hover {
+	background-color: lightcoral;
+	color: white;
+}
+
+.btn-add:hover {
+	background-color: lightcoral;
+	color: white;
 }
